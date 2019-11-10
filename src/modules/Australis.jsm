@@ -200,8 +200,8 @@ var statusBarHandler = {
 	{
 		for(let window of CustomizableUI.windows)
 		{
-			if(window.caligon && window.caligon.status4evar) {
-				window.caligon.status4evar.updateWindow();
+			if(window.hawkeye116477 && window.hawkeye116477.status4evar) {
+				window.hawkeye116477.status4evar.updateWindow();
 			}
 		}
 	},
@@ -239,8 +239,8 @@ var statusBarHandler = {
 	onCustomizeStart: function(aWindow)
 	{
 		this.customizing = true;
-		if(aWindow.caligon && aWindow.caligon.status4evar) {
-			aWindow.caligon.status4evar.beforeCustomization();
+		if(aWindow.hawkeye116477 && aWindow.hawkeye116477.status4evar) {
+			aWindow.hawkeye116477.status4evar.beforeCustomization();
 		}
 	},
 

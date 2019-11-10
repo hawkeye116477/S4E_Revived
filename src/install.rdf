@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   -
+   - This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/.
+   -
+   - Copyright (C) 2017 Matthew Turnbull <sparky@bluefang-logic.com>. All Rights Reserved.
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+
+		<!-- Info -->
+
+		<em:name>Status-4-Evar Revived</em:name>
+		<em:description>Status widgets and progress indicators for Waterfox Classic</em:description>
+		<em:id>status4evar-revived@hawkeye116477</em:id>
+		<em:version>2019.10.11.1</em:version>
+		<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+		<em:contributor>Jonas Jenwald &lt;Snuffleupagus&gt;hawkeye116477&gt;</em:contributor>
+		<em:type>2</em:type>
+		<em:iconURL>chrome://status4evar/skin/s4e32.png</em:iconURL>
+		<em:optionsURL>chrome://status4evar/content/prefs.xul</em:optionsURL>
+		<em:multiprocessCompatible>true</em:multiprocessCompatible>
+
+		<!-- Localizations -->
+
+		<em:localized><!-- bg-BG -->
+			<Description>
+				<em:locale>bg-BG</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Лента за състоянието, за Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Martin - Varna [bg-BG]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- cs -->
+			<Description>
+				<em:locale>cs</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Stavová udělátka a indikátory pro Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Michal Stanke [cs]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- da -->
+			<Description>
+				<em:locale>da</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Status-widgets og forløbsindikatorer til Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Joergen [da]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- de -->
+			<Description>
+				<em:locale>de</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Verschiedene Status- und Fortschrittsanzeige-Elemente für Firefox 4 und höher</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>o.roth (ReinekeFux) [de]</em:translator><em:translator>Archaeopteryx [de]</em:translator><em:translator>Endor [de]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- dsb -->
+			<Description>
+				<em:locale>dsb</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Statusowe asistenty a póstupowe grědy za Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>milupo [dsb]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- el -->
+			<Description>
+				<em:locale>el</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Οπτικά στοιχεία κατάστασης και ενδείκτες προόδου για Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Γιώργος Μαλαμάς [el]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- eo -->
+			<Description>
+				<em:locale>eo</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Stataj fenestraĵoj kaj plenumindikiloj por Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Milupo [eo]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- es-ES -->
+			<Description>
+				<em:locale>es-ES</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Incluye los indicadores de estado y de progreso para Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>José I. Plaza [es-ES]</em:translator><em:translator>Carlos Mella [es-ES]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- fr -->
+			<Description>
+				<em:locale>fr</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Outils indiquant l'état et barres de progressions pour Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Jojaba [fr]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- he -->
+			<Description>
+				<em:locale>he</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>יישומוני מצב ומדדי התקדמות עבור Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>SiiiE [he]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- hsb -->
+			<Description>
+				<em:locale>hsb</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Statusowe asistenty a postupowe hrjady za Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Milupo [hsb]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- hu -->
+			<Description>
+				<em:locale>hu</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Állapot- és betöltésjelző elemek Waterfox Classic -hoz</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Kozák Csaba (WonderCsabo) [hu]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- it-IT -->
+			<Description>
+				<em:locale>it-IT</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Elementi della barra di stato e indicatori di avanzamento per Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Emanuele Alimonda [it-IT]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- ja-JP -->
+			<Description>
+				<em:locale>ja-JP</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Firefox 4 以降のステータスバーやプログレスバー表示をカスタマイズ</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>能美涼子 [ja-JP]</em:translator><em:translator>k2jp [ja-JP]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- nb-NO -->
+			<Description>
+				<em:locale>nb-NO</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Statusfunksjoner og framdriftsviser for Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Håvar Ingmund Henriksen [nb-NO]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- nl -->
+			<Description>
+				<em:locale>nl</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Hulpmiddelen voor de statusbalk voor Firefox 4 en hoger</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Martijn Weisbeek [nl]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- pl -->
+			<Description>
+				<em:locale>pl</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Informacje o statusie i wskaźniki postępu dla przeglądarki Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Leszek(teo)Życzkowski [pl]</em:translator><em:translator>Leepa [pl]</em:translator><em:translator>momus [pl]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- pt-BR -->
+			<Description>
+				<em:locale>pt-BR</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Widgets de status e indicadores de progresso para o Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Gutierrez PS [pt-BR]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- ro -->
+			<Description>
+				<em:locale>ro</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Instrumente de indicare a stării navigatorului și indicatoare de progres pentru Waterfox Classic.</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Cătălin Zamfirescu (x10firefox) [ro]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- ru -->
+			<Description>
+				<em:locale>ru</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Элементы и индикаторы бывшей строки состояния для Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Пирятинский Виталий [ru]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- sr -->
+			<Description>
+				<em:locale>sr</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Елементи за стање и показатељи напретка за Фајерфокс 4.</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Rancher [sr]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- sv-SE -->
+			<Description>
+				<em:locale>sv-SE</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Statusfunktioner och förloppsindikatorer för Waterfox Classic</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Mikael Hiort af Ornäs [sv-SE]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- tr -->
+			<Description>
+				<em:locale>tr</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Firefox 4 + için durum widgetleri ve ilerleme göstergeleri</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>ckk [tr]</em:translator><em:translator>omrakin [tr]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- zh-CN -->
+			<Description>
+				<em:locale>zh-CN</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>为Waterfox Classic提供状态栏部件和进度条</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>Cye3s [zh-CN]</em:translator><em:translator>yongdong7 [zh-CN]</em:translator>
+			</Description>
+		</em:localized>
+
+		<em:localized><!-- zh-TW -->
+			<Description>
+				<em:locale>zh-TW</em:locale>
+				<em:name>Status-4-Evar Revived</em:name>
+				<em:description>Firefox 4及之後版本專用的狀態小工具和載入進度計</em:description>
+				<em:creator>Matthew Turnbull &lt;Sparky Bluefang&gt;</em:creator>
+				<em:homepageURL>http://forums.mozillazine.org/viewtopic.php?f=48&amp;t=2001965</em:homepageURL>
+				<em:translator>velociraptor [zh-TW]</em:translator>
+			</Description>
+		</em:localized>
+
+		<!-- Targets -->
+
+		<em:targetApplication><!-- Waterfox -->
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>56.0</em:minVersion>
+				<em:maxVersion>56.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+	</Description>
+</RDF>

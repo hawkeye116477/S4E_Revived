@@ -24,7 +24,7 @@
 	<script type="application/javascript" src="chrome://status4evar/content/overlay.js" />
 
 	<commandset>
-		<command id="S4E:Options" oncommand="caligon.status4evar.launchOptions(window);"/>
+		<command id="S4E:Options" oncommand="hawkeye116477.status4evar.launchOptions(window);"/>
 	</commandset>
 
 	<popupset id="mainPopupSet">
@@ -46,7 +46,7 @@
 		               title="&status4evar.download.widget.title;"
 		               class="toolbarbutton-1 chromeclass-toolbar-additional"
 		               removable="true" tooltip="_child"
-		               oncommand="caligon.status4evar.downloadStatus.openUI(event)">
+		               oncommand="hawkeye116477.status4evar.downloadStatus.openUI(event)">
 			<stack id="status4evar-download-anchor" class="toolbarbutton-icon">
 				<image id="status4evar-download-icon" />
 				<vbox pack="end">

@@ -18,7 +18,7 @@ const CC = Components.classes;
 const CI = Components.interfaces;
 const CU = Components.utils;
 
-const s4e_service = CC["@caligonstudios.com/status4evar;1"].getService(CI.nsIStatus4Evar);
+const s4e_service = CC["@hawkeye116477/status4evar;1"].getService(CI.nsIStatus4Evar);
 const uuidService = CC["@mozilla.org/uuid-generator;1"].getService(CI.nsIUUIDGenerator);
 
 CU.import("resource://gre/modules/Services.jsm");
@@ -151,7 +151,7 @@ Status4Evar.prototype =
 
 	launchOptions: function(currentWindow)
 	{
-		AddonManager.getAddonByID("status4evar@caligonstudios.com", function(aAddon)
+		AddonManager.getAddonByID("status4evar@hawkeye116477", function(aAddon)
 		{
 			let optionsURL = aAddon.optionsURL;
 			let windows = Services.wm.getEnumerator(null);
@@ -293,7 +293,7 @@ function SizeModeService(window, gBrowser, s4e)
 	this.lastFullScreen = this._window.fullScreen;
 	this.lastwindowState = this._window.windowState;
 
-	this._mm.addMessageListener("status4evar@caligonstudios.com:video-detect-answer", this)
+	this._mm.addMessageListener("status4evar@hawkeye116477:video-detect-answer", this)
 	this._mm.loadFrameScript("chrome://status4evar/content/content-thunk.js", true);
 
 	this._window.addEventListener("sizemodechange", this, false);
@@ -314,7 +314,7 @@ SizeModeService.prototype =
 		this._window.removeEventListener("sizemodechange", this, false);
 
 		this._mm.removeDelayedFrameScript("chrome://status4evar/content/content-thunk.js");
-		this._mm.removeMessageListener("status4evar@caligonstudios.com:video-detect-answer", this);
+		this._mm.removeMessageListener("status4evar@hawkeye116477:video-detect-answer", this);
 
 		["_window", "_gBrowser", "_s4e", "_mm"].forEach(function(prop)
 		{
@@ -331,7 +331,7 @@ SizeModeService.prototype =
 			if(this.lastFullScreen && s4e_service.advancedStatusDetectVideo)
 			{
 				Services.console.logStringMessage("S4E: full screen enter");
-				this._gBrowser.selectedBrowser.messageManager.sendAsyncMessage("status4evar@caligonstudios.com:video-detect");
+				this._gBrowser.selectedBrowser.messageManager.sendAsyncMessage("status4evar@hawkeye116477:video-detect");
 			}
 			else
 			{
@@ -349,7 +349,7 @@ SizeModeService.prototype =
 
 	receiveMessage: function(message)
 	{
-		if(message.name == "status4evar@caligonstudios.com:video-detect-answer")
+		if(message.name == "status4evar@hawkeye116477:video-detect-answer")
 		{
 			Services.console.logStringMessage("S4E: video detect response (" + message.data.isVideo + ")");
 			this._s4e.statusService.setFullScreenState(this.lastFullScreen, message.data.isVideo);

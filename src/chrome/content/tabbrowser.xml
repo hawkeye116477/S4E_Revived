@@ -152,16 +152,16 @@
 
 			<property name="label">
 				<setter><![CDATA[
-					if(window.caligon && window.caligon.status4evar)
+					if(window.hawkeye116477 && window.hawkeye116477.status4evar)
 					{
-						window.caligon.status4evar.statusService.setStatusText(val);
+						window.hawkeye116477.status4evar.statusService.setStatusText(val);
 					}
 					return undefined;
 				]]></setter>
 				<getter><![CDATA[
-					if(window.caligon && window.caligon.status4evar)
+					if(window.hawkeye116477 && window.hawkeye116477.status4evar)
 					{
-						return window.caligon.status4evar.statusService.getStatusText();
+						return window.hawkeye116477.status4evar.statusService.getStatusText();
 					}
 					return "";
 				]]></getter>

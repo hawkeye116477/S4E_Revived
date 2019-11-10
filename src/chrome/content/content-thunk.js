@@ -25,8 +25,8 @@ function handleVideoDetect(message)
 		);
 	}
 
-	sendAsyncMessage("status4evar@caligonstudios.com:video-detect-answer", { isVideo: isVideo});
+	sendAsyncMessage("status4evar@hawkeye116477:video-detect-answer", { isVideo: isVideo});
 }
 
-addMessageListener("status4evar@caligonstudios.com:video-detect", handleVideoDetect);
+addMessageListener("status4evar@hawkeye116477:video-detect", handleVideoDetect);
 

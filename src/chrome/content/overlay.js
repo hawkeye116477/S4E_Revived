@@ -18,7 +18,7 @@
 
 Components.utils.import("resource://status4evar/Australis.jsm");
 
-if(!caligon) var caligon = {};
+if(!hawkeye116477) var hawkeye116477 = {};
 
 window.addEventListener("load", function buildS4E()
 {
@@ -26,7 +26,7 @@ window.addEventListener("load", function buildS4E()
 
 	Components.utils.import("resource://status4evar/Status4Evar.jsm");
 
-	caligon.status4evar = new Status4Evar(window, gBrowser, gNavToolbox, PanelUI);
-	caligon.status4evar.setup();
+	hawkeye116477.status4evar = new Status4Evar(window, gBrowser, gNavToolbox, PanelUI);
+	hawkeye116477.status4evar.setup();
 }, false);
 

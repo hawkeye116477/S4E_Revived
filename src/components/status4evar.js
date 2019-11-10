@@ -93,7 +93,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				let browser_bottom_box = win.caligon.status4evar.getters.browserBottomBox;
+				let browser_bottom_box = win.hawkeye116477.status4evar.getters.browserBottomBox;
 				if(browser_bottom_box)
 				{
 					this.setBoolElementAttribute(browser_bottom_box, "s4eboarder", this.addonbarBorderStyle);
@@ -119,7 +119,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				win.caligon.status4evar.toolbars.updateWindowGripper(true);
+				win.hawkeye116477.status4evar.toolbars.updateWindowGripper(true);
 			}
 		},
 
@@ -147,7 +147,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				let urlbar = win.caligon.status4evar.getters.urlbar;
+				let urlbar = win.hawkeye116477.status4evar.getters.urlbar;
 				if(urlbar)
 				{
 					this.setBoolElementAttribute(urlbar, "s4eforce", this.advancedUrlbarForceBinding);
@@ -163,7 +163,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				win.caligon.status4evar.downloadStatus.updateBinding();
+				win.hawkeye116477.status4evar.downloadStatus.updateBinding();
 			}
 		},
 
@@ -207,7 +207,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				let download_button = win.caligon.status4evar.getters.downloadButton;
+				let download_button = win.hawkeye116477.status4evar.getters.downloadButton;
 				if(download_button)
 				{
 					this.setBoolElementAttribute(download_button, "forcevisible", this.downloadForce);
@@ -223,7 +223,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				win.caligon.status4evar.downloadStatus.updateButton();
+				win.hawkeye116477.status4evar.downloadStatus.updateButton();
 			}
 		},
 
@@ -235,7 +235,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				let download_button = win.caligon.status4evar.getters.downloadButton;
+				let download_button = win.hawkeye116477.status4evar.getters.downloadButton;
 				if(download_button)
 				{
 					this.setBoolElementAttribute(download_button, "forcelabel", this.downloadLabelForce);
@@ -267,7 +267,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				win.caligon.status4evar.downloadStatus.updateButton();
+				win.hawkeye116477.status4evar.downloadStatus.updateButton();
 			}
 		},
 
@@ -279,7 +279,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				win.caligon.status4evar.downloadStatus.updateButton();
+				win.hawkeye116477.status4evar.downloadStatus.updateButton();
 			}
 		},
 
@@ -303,7 +303,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				let toolbar_progress = win.caligon.status4evar.getters.toolbarProgress;
+				let toolbar_progress = win.hawkeye116477.status4evar.getters.toolbarProgress;
 				if(toolbar_progress)
 				{
 					this.setBoolElementAttribute(toolbar_progress, "forcevisible", this.progressToolbarForce);
@@ -319,7 +319,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				let toolbar_progress = win.caligon.status4evar.getters.toolbarProgress;
+				let toolbar_progress = win.hawkeye116477.status4evar.getters.toolbarProgress;
 				if(toolbar_progress)
 				{
 					this.setBoolElementAttribute(toolbar_progress, "s4estyle", this.progressToolbarStyle);
@@ -349,8 +349,8 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				let urlbar = win.caligon.status4evar.getters.urlbar;
-				let urlbar_progress = win.caligon.status4evar.getters.urlbarProgress;
+				let urlbar = win.hawkeye116477.status4evar.getters.urlbar;
+				let urlbar_progress = win.hawkeye116477.status4evar.getters.urlbarProgress;
 				if(urlbar && urlbar_progress)
 				{
 					if(this.progressUrlbar)
@@ -382,7 +382,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				let urlbar = win.caligon.status4evar.getters.urlbar;
+				let urlbar = win.hawkeye116477.status4evar.getters.urlbar;
 				if(urlbar)
 				{
 					this.setBoolElementAttribute(urlbar, "s4estyle", this.progressUrlbarStyle);
@@ -398,8 +398,8 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				win.caligon.status4evar.statusService.clearStatusField();
-				win.caligon.status4evar.statusService.updateStatusField(true);
+				win.hawkeye116477.status4evar.statusService.clearStatusField();
+				win.hawkeye116477.status4evar.statusService.updateStatusField(true);
 			}
 		},
 
@@ -411,8 +411,8 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				win.caligon.status4evar.statusService.buildTextOrder();
-				win.caligon.status4evar.statusService.updateStatusField(true);
+				win.hawkeye116477.status4evar.statusService.buildTextOrder();
+				win.hawkeye116477.status4evar.statusService.updateStatusField(true);
 			}
 		},
 
@@ -448,7 +448,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				win.caligon.status4evar.statusService.buildTextOrder();
+				win.hawkeye116477.status4evar.statusService.buildTextOrder();
 			}
 		},
 
@@ -460,7 +460,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				win.caligon.status4evar.statusService.buildTextOrder();
+				win.hawkeye116477.status4evar.statusService.buildTextOrder();
 			}
 		},
 
@@ -472,7 +472,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				let statusOverlay = win.caligon.status4evar.getters.statusOverlay;
+				let statusOverlay = win.hawkeye116477.status4evar.getters.statusOverlay;
 				if(statusOverlay)
 				{
 					statusOverlay.invertMirror = this.statusUrlbarInvertMirror;
@@ -488,7 +488,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				let statusOverlay = win.caligon.status4evar.getters.statusOverlay;
+				let statusOverlay = win.hawkeye116477.status4evar.getters.statusOverlay;
 				if(statusOverlay)
 				{
 					statusOverlay.mouseMirror = this.statusUrlbarMouseMirror;
@@ -504,7 +504,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				win.caligon.status4evar.statusService.updateStatusField(true);
+				win.hawkeye116477.status4evar.statusService.updateStatusField(true);
 			}
 		},
 
@@ -516,7 +516,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				let status_widget = win.caligon.status4evar.getters.statusWidget;
+				let status_widget = win.hawkeye116477.status4evar.getters.statusWidget;
 				if(status_widget)
 				{
 					status_widget.maxWidth = (this.statusToolbarMaxLength || "");
@@ -543,7 +543,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				let urlbar = win.caligon.status4evar.getters.urlbar;
+				let urlbar = win.hawkeye116477.status4evar.getters.urlbar;
 				if(urlbar)
 				{
 					urlbar.s4esalign = this.statusUrlbarAlign;
@@ -581,7 +581,7 @@ Status_4_Evar.prototype =
 			},
 			updateWindow: function(win)
 			{
-				let urlbar = win.caligon.status4evar.getters.urlbar;
+				let urlbar = win.hawkeye116477.status4evar.getters.urlbar;
 				if(urlbar)
 				{
 					urlbar.s4espos = this.statusUrlbarPosition;
@@ -617,7 +617,7 @@ Status_4_Evar.prototype =
 
 	startup: function()
 	{
-		this.prefs = Services.prefs.getBranch("extensions.caligon.s4e.").QueryInterface(CI.nsIPrefBranch2);
+		this.prefs = Services.prefs.getBranch("extensions.hawkeye116477.s4e.").QueryInterface(CI.nsIPrefBranch2);
 
 		this.migratePrefsRoot();
 

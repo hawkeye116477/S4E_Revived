@@ -1,3 +1,6 @@
+Version 2019.10.11.1
+* Restored compatibility with Waterfox Classic 2019.10
+
 Version next
 * Drop support for Firefox 51.0 and older.
 
@@ -321,7 +324,7 @@ Version 2011.01.17.02.2
 * Use a period instead of a hyphen in the version number. AMO doesn't like it.
 * Properly persist the S4E toolbar items after adding them on first run after installing. They should now stay there after restarting.
 * Consolidate and simplify toolbar styling.
-* Add locale zh-CN and update nl 
+* Add locale zh-CN and update nl
 
 Version 2011.01.17.02-1
 * Don't change the bottom borders on Mac.
