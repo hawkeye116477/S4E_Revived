@@ -1,6 +1,5 @@
 *.xpi
-components/*.xpt
-res/
-components/cache/
-xpidl_debug
-
+src/components/*.xpt
+src/res/
+src/components/cache/
+src/xpidl_debug
