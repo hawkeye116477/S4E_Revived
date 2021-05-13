@@ -17,7 +17,7 @@ if [ -f ./components/status4evar.xpt ]; then
 fi
 
 echo "Creating xpt file"
-python2 $(xdg-user-dir DOWNLOAD)/xulrunner-sdk/sdk/bin/typelib.py ./components/status4evar.idl -o ./components/status4evar.xpt -I /$(xdg-user-dir DOWNLOAD)/xulrunner-sdk/idl/
+python2 $(xdg-user-dir DOWNLOAD)/firefox-sdk/sdk/bin/typelib.py ./components/status4evar.idl -o ./components/status4evar.xpt -I $(xdg-user-dir DOWNLOAD)/firefox-sdk/idl/
 
 echo "Creating xpi file"
 zip -r ../$XPI_FILE.xpi *
