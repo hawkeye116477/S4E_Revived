@@ -14,12 +14,11 @@
 	xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
 	<!-- Info -->
-
 	<Description about="urn:mozilla:install-manifest"
 		em:name="Status-4-Evar Revived"
 		em:description="Status widgets and progress indicators for Waterfox Classic and Basilisk"
 		em:id="status4evar-revived@hawkeye116477"
-		em:version="2019.10.11.2"
+		em:version="2019.10.11.3"
 		em:creator="hawkeye116477"
 		em:contributor="Matthew Turnbull, Sparky Bluefang, Jonas Jenwald, Snuffleupagus, wolfbeast"
 		em:type="2"
@@ -27,7 +26,6 @@
 		em:multiprocessCompatible="true">
 
 	<!-- Targets -->
-
 	<em:targetApplication name="Waterfox Classic and Basilisk">
 		<Description em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}" em:minVersion="52.0" em:maxVersion="56.*"/>
     </em:targetApplication>

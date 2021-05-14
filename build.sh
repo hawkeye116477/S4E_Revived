@@ -36,7 +36,7 @@ EOF
 )
 done
 
-localized=$(echo "${localized}" | sed ':a;N;$!ba;s/\n/\\n/g' | sed 's/\$/\\$/g' | sed '/^$/d')
+localized=$(echo "${localized}" | sed '/^$/d' | sed ':a;N;$!ba;s/\n/\\n/g' | sed 's/\$/\\$/g')
 sed -i "s|_localized_|$localized|" "$temp_path"/install.rdf
 
 echo "Creating xpt file"
