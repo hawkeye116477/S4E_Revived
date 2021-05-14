@@ -1,12 +1,12 @@
 /*
  * ***** BEGIN LICENSE BLOCK *****
- * 
+ *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- * 
+ *
  * Copyright (C) 2010-2011 Matthew Turnbull <sparky@bluefang-logic.com>. All Rights Reserved.
- * 
+ *
  * ***** END LICENSE BLOCK *****
 */
 
@@ -39,8 +39,7 @@ radio[pane="status4evar-pane-addonbar"]
 
 radio[pane="status4evar-pane-advanced"]
 {
-	list-style-image: url("chrome://browser/skin/preferences/Options.png");
-	-moz-image-region: rect(0px, 224px, 32px, 192px);
+	list-style-image: url("chrome://browser/skin/preferences/in-content/icons.svg#advanced");
 }
 
 #status4evar-advanced-urlbar-forceBinding-desc
