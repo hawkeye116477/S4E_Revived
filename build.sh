@@ -41,7 +41,7 @@ localized=$(echo "${localized}" | sed '/^$/d' | sed ':a;N;$!ba;s/\n/\\n/g' | sed
 sed -i "s|_localized_|$localized|" "$temp_path"/install.rdf
 
 echo "Creating xpt file"
-python2 "$(xdg-user-dir DOWNLOAD)"/firefox-sdk/sdk/bin/typelib.py ./components/status4evar.idl -o ./components/status4evar.xpt -I "$(xdg-user-dir DOWNLOAD)"/firefox-sdk/idl/
+python2 "$(xdg-user-dir DOWNLOAD)"/firefox-sdk/sdk/bin/typelib.py ./chrome/content/components/status4evar.idl -o ./chrome/content/components/status4evar.xpt -I "$(xdg-user-dir DOWNLOAD)"/firefox-sdk/idl/
 
 echo "Removing old xpi file"
 if [ -f "$path/$XPI_FILE.xpi" ]; then
