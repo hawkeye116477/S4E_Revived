@@ -29,10 +29,3 @@ overlay chrome://status4evar/content/prefs.xul chrome://status4evar/content/pref
 # Styles
 style   chrome://browser/content/browser.xul   chrome://status4evar/skin/versions/overlay47.css appversion<=47.*
 style   chrome://browser/content/browser.xul   chrome://status4evar/skin/versions/overlay49.css appversion<=49.*
-
-# XPCOM
-interfaces chrome/content/components/status4evar.xpt
-component  {13b3595e-7bb5-4cfe-bbfa-82c900a4d7bf} chrome/content/components/status4evar.js
-contract   @hawkeye116477/status4evar;1      {13b3595e-7bb5-4cfe-bbfa-82c900a4d7bf}
-category   profile-after-change Status-4-Evar     @hawkeye116477/status4evar;1
-

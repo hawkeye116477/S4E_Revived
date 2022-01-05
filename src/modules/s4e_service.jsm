@@ -1,12 +1,12 @@
 /*
  * ***** BEGIN LICENSE BLOCK *****
- * 
+ *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- * 
+ *
  * Copyright (C) 2010-2015 Matthew Turnbull <sparky@bluefang-logic.com>. All Rights Reserved.
- * 
+ *
  * ***** END LICENSE BLOCK *****
 */
 
@@ -22,20 +22,18 @@ CU.import("resource://gre/modules/Services.jsm");
 
 const CURRENT_MIGRATION = 7;
 
-function Status_4_Evar(){}
+const EXPORTED_SYMBOLS = ["s4e_service"];
 
-Status_4_Evar.prototype =
-{
-	classID:        Components.ID("{13b3595e-7bb5-4cfe-bbfa-82c900a4d7bf}"),
+var s4e_service = {
 	QueryInterface: XPCOMUtils.generateQI([
 	                     CI.nsISupportsWeakReference,
 	                     CI.nsIObserver,
 	                     CI.nsIStatus4Evar
-	                ]),
+                        ]),
 
-	prefs:          null,
+    prefs:          null,
 
-	addonbarBorderStyle:            false,
+    addonbarBorderStyle:            false,
 	addonbarLegacyShim:             true,
 	addonbarWindowGripper:          true,
 
@@ -598,9 +596,6 @@ Status_4_Evar.prototype =
 		{
 			switch(topic)
 			{
-				case "profile-after-change":
-					this.startup();
-					break;
 				case "quit-application":
 					this.shutdown();
 					break;
@@ -797,7 +792,7 @@ Status_4_Evar.prototype =
 		}
 	},
 
-	// Updtate a browser window
+	// Update a browser window
 	updateWindow: function(win, pro)
 	{
 		if(!(win instanceof CI.nsIDOMWindow)
@@ -877,6 +872,3 @@ Status_4_Evar.prototype =
 		}, this);
 	}
 };
-
-const NSGetFactory = XPCOMUtils.generateNSGetFactory([Status_4_Evar]);
-

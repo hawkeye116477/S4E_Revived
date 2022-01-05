@@ -1,12 +1,12 @@
 /*
  * ***** BEGIN LICENSE BLOCK *****
- * 
+ *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- * 
+ *
  * Copyright (C) 2010-2015, 2017 Matthew Turnbull <sparky@bluefang-logic.com>. All Rights Reserved.
- * 
+ *
  * ***** END LICENSE BLOCK *****
 */
 
@@ -18,13 +18,13 @@ const CC = Components.classes;
 const CI = Components.interfaces;
 const CU = Components.utils;
 
-const s4e_service = CC["@hawkeye116477/status4evar;1"].getService(CI.nsIStatus4Evar);
 const uuidService = CC["@mozilla.org/uuid-generator;1"].getService(CI.nsIUUIDGenerator);
 
 CU.import("resource://gre/modules/Services.jsm");
 CU.import("resource://gre/modules/XPCOMUtils.jsm");
 CU.import("resource://gre/modules/AddonManager.jsm");
 
+CU.import("resource://status4evar/s4e_service.jsm");
 CU.import("resource://status4evar/Australis.jsm");
 CU.import("resource://status4evar/Status.jsm");
 CU.import("resource://status4evar/Progress.jsm");

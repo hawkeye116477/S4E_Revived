@@ -58,7 +58,8 @@ for locale in sorted(os.listdir(locales_dir)):
 '''
         with open(pn("./locales.manifest"), "a", encoding='utf-8') as l_m:
             if locale != "en-US":
-                l_m.write("locale status4evar "+locale+" chrome/locale/"+locale+"/\n")
+                l_m.write("locale status4evar "+locale +
+                          " chrome/locale/"+locale+"/\n")
 
 install_file = pn("./install.rdf")
 with open(install_file, 'r', encoding='utf-8') as install_f:
@@ -66,9 +67,6 @@ with open(install_file, 'r', encoding='utf-8') as install_f:
     data = data.replace("_localized_", localized)
 with open(install_file, 'w', encoding='utf-8') as install_f:
     install_f.write(data)
-
-# Create xpt file
-os.system('python2 "$(xdg-user-dir DOWNLOAD)"/firefox-sdk/sdk/bin/typelib.py ./chrome/content/components/status4evar.idl -o ./chrome/content/components/status4evar.xpt -I "$(xdg-user-dir DOWNLOAD)"/firefox-sdk/idl/')
 
 # Create xpi
 artifacts_path = pj(main_path, "artifacts")
