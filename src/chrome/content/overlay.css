@@ -1,12 +1,12 @@
 /*
  * ***** BEGIN LICENSE BLOCK *****
- * 
+ *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- * 
+ *
  * Copyright (C) 2010-2011, 2013 Matthew Turnbull <sparky@bluefang-logic.com>. All Rights Reserved.
- * 
+ *
  * ***** END LICENSE BLOCK *****
 */
 
@@ -16,22 +16,18 @@
  * Location bar progress
  */
 
-#urlbar
-{
-	-moz-binding: url("chrome://status4evar/content/urlbarBindings.xml#urlbar");
+#urlbar {
+    -moz-binding: url("chrome://status4evar/content/urlbarBindings.xml#urlbar");
 }
 
-#urlbar[s4eforce="true"]
-{
-	-moz-binding: url("chrome://status4evar/content/urlbarBindings.xml#urlbar") !important;
+#urlbar[s4eforce="true"] {
+    -moz-binding: url("chrome://status4evar/content/urlbarBindings.xml#urlbar") !important;
 }
 
 /*
  * Status Popup
  */
 
-statuspanel
-{
-	-moz-binding: url("chrome://status4evar/content/tabbrowser.xml#statuspanel");
+statuspanel {
+    -moz-binding: url("chrome://status4evar/content/tabbrowser.xml#statuspanel");
 }
-

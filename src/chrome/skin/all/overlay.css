@@ -1,34 +1,34 @@
 /*
  * ***** BEGIN LICENSE BLOCK *****
- * 
+ *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- * 
+ *
  * Original code copyright (C) 2010 Margaret Leibovic <margaret.leibovic@gmail.com>. All Rights Reserved.
  * Original code copyright (C) 2010 Drew Willcoxon <adw@mozilla.com>. All Rights Reserved.
  * Original code copyright (C) 2013 Paolo Amadini <paolo.mozmail@amadzone.org>. All Rights Reserved.
  * Original code copyright (C) 2013 Gijs Kruitbosch <gijskruitbosch@gmail.com>. All Rights Reserved.
  * Copyright (C) 2010-2016 Matthew Turnbull <sparky@bluefang-logic.com>. All Rights Reserved.
- * 
+ *
  * ***** END LICENSE BLOCK *****
- * 
+ *
  * Original status overlay implementation by Drew Willcoxon.
  * Adapted from the back-out patch:
  * https://hg.mozilla.org/mozilla-central/rev/d384e2adf22e
- * 
+ *
  * Original progress line code by Margaret Leibovic.
  * Adapted from the back-out patch:
  * https://hg.mozilla.org/mozilla-central/rev/42270894db65
- * 
+ *
  * Original download notification code by Paolo Amadini.
  * Adapted from the check-in patch:
  * https://hg.mozilla.org/mozilla-central/rev/9cb6dcfb0b85
- * 
+ *
  * Original download notification code by Gijs Kruitbosch.
  * Adapted from the check-in patch:
  * https://hg.mozilla.org/mozilla-central/rev/8a1d8044a4c8
- * 
+ *
  * Original Add-on bar styling by Mozilla Foundation.
  * Adapted from the back-out patch:
  * https://hg.mozilla.org/mozilla-central/rev/dd59f8effb73
@@ -42,40 +42,34 @@
  */
 
 #status4evar-status-widget,
-#status4evar-progress-widget
-{
-	-moz-box-align: center;
+#status4evar-progress-widget {
+    -moz-box-align: center;
 }
 
-[forcevisible="true"]
-{
-	visibility: visible !important;
+[forcevisible="true"] {
+    visibility: visible !important;
 }
 
 #wrapper-status4evar-progress-widget progressmeter,
-#wrapper-status4evar-download-button toolbarbutton
-{
-	visibility: visible;
+#wrapper-status4evar-download-button toolbarbutton {
+    visibility: visible;
 }
 
-#wrapper-status4evar-status-widget toolbaritem label
-{
-	background-color: rgba(0,0,0,0.2);
-	padding: 2px 4px;
+#wrapper-status4evar-status-widget toolbaritem label {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2px 4px;
 }
 
 /*
  * Options button
  */
 
-#status4evar-options-button
-{
-	list-style-image: url("chrome://status4evar/skin/s4e32.png");
+#status4evar-options-button {
+    list-style-image: url("chrome://status4evar/skin/s4e32.png");
 }
 
-#status4evar-options-button[cui-areatype="toolbar"]
-{
-	list-style-image: url("chrome://status4evar/skin/s4e16.png");
+#status4evar-options-button[cui-areatype="toolbar"] {
+    list-style-image: url("chrome://status4evar/skin/s4e16.png");
 }
 
 /*
@@ -83,152 +77,156 @@
  */
 
 toolbar[mode="icons"] #status4evar-download-button[forcelabel="true"],
-toolbar[mode="text"] #status4evar-download-button
-{
-	-moz-box-orient: horizontal !important;
+toolbar[mode="text"] #status4evar-download-button {
+    -moz-box-orient: horizontal !important;
 }
 
-toolbar[mode="icons"] #status4evar-download-button[forcelabel="true"] > label
-{
-	display: -moz-box !important;
+toolbar[mode="icons"] #status4evar-download-button[forcelabel="true"] > label {
+    display: -moz-box !important;
 }
 
-#status4evar-download-progress-bar
-{
-	border: 1px solid gray;
-	-moz-appearance: none;
-	margin: 0px;
-	min-height: 0px;
-	min-width: 0px;
+#status4evar-download-progress-bar {
+    border: 1px solid gray;
+    -moz-appearance: none;
+    margin: 0px;
+    min-height: 0px;
+    min-width: 0px;
 }
 
-#status4evar-download-progress-bar > *
-{
-	-moz-appearance: none;
-	background: #FFFFFF;
+#status4evar-download-progress-bar > * {
+    -moz-appearance: none;
+    background: #ffffff;
 }
 
-#status4evar-download-progress-bar[pmType$="unknown"] > .progress-bar
-{
-	background-image: url("chrome://status4evar/skin/pulse.png");
+#status4evar-download-progress-bar[pmType$="unknown"] > .progress-bar {
+    background-image: url("chrome://status4evar/skin/pulse.png");
 }
 
-#status4evar-download-icon
-{
-	background-position: center;
-	background-repeat: no-repeat;
-	min-width: 32px;
-	min-height: 32px;
-	list-style-image: url("chrome://browser/skin/menuPanel.png");
-	-moz-image-region: rect(0px, 256px, 32px, 224px);
+#status4evar-download-icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 32px;
+    min-height: 32px;
+    list-style-image: url("chrome://browser/skin/menuPanel.png");
+    -moz-image-region: rect(0px, 256px, 32px, 224px);
 }
 
-#status4evar-download-button[cui-areatype="menu-panel"][attention] #status4evar-download-icon
-{
-	list-style-image: url("chrome://browser/skin/downloads/download-glow-menuPanel.png");
-	-moz-image-region: auto;
+#status4evar-download-button[cui-areatype="menu-panel"][attention]
+    #status4evar-download-icon {
+    list-style-image: url("chrome://browser/skin/downloads/download-glow-menuPanel.png");
+    -moz-image-region: auto;
 }
 
-#status4evar-download-button[cui-areatype="toolbar"] #status4evar-download-icon
-{
-	min-width: 18px;
-	min-height: 18px;
-	list-style-image: url("chrome://browser/skin/Toolbar.png");
+#status4evar-download-button[cui-areatype="toolbar"]
+    #status4evar-download-icon {
+    min-width: 18px;
+    min-height: 18px;
+    list-style-image: url("chrome://browser/skin/Toolbar.png");
 }
 
-toolbar[brighttext] #status4evar-download-button[cui-areatype="toolbar"] #status4evar-download-icon
-{
-	list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
+toolbar[brighttext]
+    #status4evar-download-button[cui-areatype="toolbar"]
+    #status4evar-download-icon {
+    list-style-image: url("chrome://browser/skin/Toolbar-inverted.png");
 }
 
-#status4evar-download-notification-container
-{
-	min-height: 1px;
-	min-width: 1px;
-	height: 1px;
-	margin-bottom: -1px;
-	position: relative;
-	z-index: 5;
+#status4evar-download-notification-container {
+    min-height: 1px;
+    min-width: 1px;
+    height: 1px;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 5;
 }
 
-#status4evar-download-notification-icon
-{
-	opacity: 0;
-	background-size: 16px;
-	background-position: center;
-	background-repeat: no-repeat;
-	width: 16px;
-	height: 16px;
+#status4evar-download-notification-icon {
+    opacity: 0;
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
 }
 
-@keyframes status4evar-download-notification-finish
-{
-	from { opacity: 0; transform: scale(1); }
-	20%  { opacity: .65; animation-timing-function: ease-in; }
-	to   { opacity: 0; transform: scale(8); }
+@keyframes status4evar-download-notification-finish {
+    from {
+        opacity: 0;
+        transform: scale(1);
+    }
+    20% {
+        opacity: 0.65;
+        animation-timing-function: ease-in;
+    }
+    to {
+        opacity: 0;
+        transform: scale(8);
+    }
 }
 
-#status4evar-download-notification-anchor[notification="finish"] #status4evar-download-notification-icon
-{
-	background-image: url("chrome://browser/skin/downloads/download-notification-finish.png");
-	animation-name: status4evar-download-notification-finish;
-	animation-duration: 1s;
+#status4evar-download-notification-anchor[notification="finish"]
+    #status4evar-download-notification-icon {
+    background-image: url("chrome://browser/skin/downloads/download-notification-finish.png");
+    animation-name: status4evar-download-notification-finish;
+    animation-duration: 1s;
 }
 
 /*
  * Splitter
  */
 
-splitter.status4evar-status-splitter
-{
-	-moz-appearance: splitter;
-	border: none;
-	background: transparent;
-	position: relative;
+splitter.status4evar-status-splitter {
+    -moz-appearance: splitter;
+    border: none;
+    background: transparent;
+    position: relative;
 }
 
-splitter.status4evar-status-splitter:not(:hover)
-{
-	-moz-appearance: none;
+splitter.status4evar-status-splitter:not(:hover) {
+    -moz-appearance: none;
 }
 
 /*
  * Location bar progress
  */
 
-#urlbar-progress-alt
-{
-	margin: 0px;
-	-moz-appearance: none;
-	min-height: 0px;
-	height: 3px;
-	border: none;
-	background-color: transparent;
+#urlbar-progress-alt {
+    margin: 0px;
+    -moz-appearance: none;
+    min-height: 0px;
+    height: 3px;
+    border: none;
+    background-color: transparent;
 }
 
-#urlbar[pmpack="center"] #urlbar-progress-alt
-{
-	-moz-box-flex: 1;
+#urlbar[pmpack="center"] #urlbar-progress-alt {
+    -moz-box-flex: 1;
 }
 
-#urlbar:not([pmpack="center"]) #urlbar-progress-alt > *
-{
-	border-top: 1px solid rgba(0,0,0,.1);
-	border-bottom: 1px solid rgba(0,0,0,.1);
+#urlbar:not([pmpack="center"]) #urlbar-progress-alt > * {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#urlbar-container:not([combined]) #urlbar:not([pmpack="begin"]) #urlbar-progress-alt,
-#urlbar-container:not([combined]) #urlbar:not([pmpack="begin"]) #urlbar-progress-alt > *
-{
-	border-bottom-left-radius: 3px;
-	border-bottom-right-radius: 3px;
+#urlbar-container:not([combined])
+    #urlbar:not([pmpack="begin"])
+    #urlbar-progress-alt,
+#urlbar-container:not([combined])
+    #urlbar:not([pmpack="begin"])
+    #urlbar-progress-alt
+    > * {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
-#urlbar-container:not([combined]) #urlbar:not([pmpack="end"]) #urlbar-progress-alt,
-#urlbar-container:not([combined]) #urlbar:not([pmpack="end"]) #urlbar-progress-alt > *
-{
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
+#urlbar-container:not([combined])
+    #urlbar:not([pmpack="end"])
+    #urlbar-progress-alt,
+#urlbar-container:not([combined])
+    #urlbar:not([pmpack="end"])
+    #urlbar-progress-alt
+    > * {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 /*
@@ -236,242 +234,215 @@ splitter.status4evar-status-splitter:not(:hover)
  */
 
 #urlbar-progress-alt > *,
-#status4evar-progress-bar[s4estyle="true"] > *
-{
-	border: none;
+#status4evar-progress-bar[s4estyle="true"] > * {
+    border: none;
 }
 
 #urlbar-progress-alt > .progress-remainder,
-#status4evar-progress-bar > .progress-remainder
-{
-	background-image: none;
-	background-color: transparent;
+#status4evar-progress-bar > .progress-remainder {
+    background-image: none;
+    background-color: transparent;
 }
 
 #urlbar[s4estyle="true"] > #urlbar-progress-alt > .progress-bar,
-#status4evar-progress-bar[s4estyle="true"] > .progress-bar
-{
-	border-right: 1px solid rgba(0,0,0,.2);
+#status4evar-progress-bar[s4estyle="true"] > .progress-bar {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #urlbar[s4estyle="true"] > #urlbar-progress-alt[value="0"] > .progress-bar,
 #urlbar[s4estyle="true"] > #urlbar-progress-alt[value="100"] > .progress-bar,
 #status4evar-progress-bar[s4estyle="true"][value="0"] > .progress-bar,
-#status4evar-progress-bar[s4estyle="true"][value="100"] > .progress-bar
-{
-	border-right: none;
+#status4evar-progress-bar[s4estyle="true"][value="100"] > .progress-bar {
+    border-right: none;
 }
 
 /*
  * Location bar status transisions
  */
 
-#urlbar .urlbar-over-link-layer
-{
-	opacity: 0;
+#urlbar .urlbar-over-link-layer {
+    opacity: 0;
 }
 
 #urlbar .urlbar-input-layer[overlinkstate="fade-in"],
-#urlbar .urlbar-input-layer[overlinkstate="fade-in"] html|input.urlbar-input::-moz-placeholder
-{
-	-moz-transition-property: color;
-	-moz-transition-duration: 150ms;
-	color: transparent;
+#urlbar
+    .urlbar-input-layer[overlinkstate="fade-in"]
+    html|input.urlbar-input::-moz-placeholder {
+    -moz-transition-property: color;
+    -moz-transition-duration: 150ms;
+    color: transparent;
 }
 
 #urlbar .urlbar-input-layer[overlinkstate="fade-out"],
-#urlbar .urlbar-input-layer[overlinkstate="fade-out"] html|input.urlbar-input::-moz-placeholder
-{
-	-moz-transition-property: color;
-	-moz-transition-duration: 150ms;
-	-moz-transition-timing-function: cubic-bezier(0.0, 1.0, 1.0, 1.0);
+#urlbar
+    .urlbar-input-layer[overlinkstate="fade-out"]
+    html|input.urlbar-input::-moz-placeholder {
+    -moz-transition-property: color;
+    -moz-transition-duration: 150ms;
+    -moz-transition-timing-function: cubic-bezier(0, 1, 1, 1);
 }
 
 #urlbar .urlbar-input-layer[overlinkstate="showing"],
-#urlbar .urlbar-input-layer[overlinkstate="showing"] html|input.urlbar-input::-moz-placeholder
-{
-	color: transparent;
+#urlbar
+    .urlbar-input-layer[overlinkstate="showing"]
+    html|input.urlbar-input::-moz-placeholder {
+    color: transparent;
 }
 
-#urlbar .urlbar-over-link-layer[overlinkstate="fade-in"]
-{
-	-moz-transition-property: opacity;
-	-moz-transition-duration: 150ms;
-	opacity: 1;
+#urlbar .urlbar-over-link-layer[overlinkstate="fade-in"] {
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 150ms;
+    opacity: 1;
 }
 
-#urlbar .urlbar-over-link-layer[overlinkstate="fade-out"]
-{
-	-moz-transition-property: opacity;
-	-moz-transition-duration: 150ms;
-	-moz-transition-timing-function: cubic-bezier(0.0, 1.0, 1.0, 1.0);
+#urlbar .urlbar-over-link-layer[overlinkstate="fade-out"] {
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 150ms;
+    -moz-transition-timing-function: cubic-bezier(0, 1, 1, 1);
 }
 
-#urlbar .urlbar-over-link-layer[overlinkstate="showing"]
-{
-	opacity: 1;
+#urlbar .urlbar-over-link-layer[overlinkstate="showing"] {
+    opacity: 1;
 }
 
-#urlbar .urlbar-input-layer-children[overlinkstate="fade-in"]
-{
-	-moz-transition-property: opacity;
-	-moz-transition-duration: 150ms;
-	opacity: 0;
+#urlbar .urlbar-input-layer-children[overlinkstate="fade-in"] {
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 150ms;
+    opacity: 0;
 }
 
-#urlbar .urlbar-input-layer-children[overlinkstate="fade-out"]
-{
-	-moz-transition-property: opacity;
-	-moz-transition-duration: 150ms;
-	-moz-transition-timing-function: cubic-bezier(0.0, 1.0, 1.0, 1.0);
+#urlbar .urlbar-input-layer-children[overlinkstate="fade-out"] {
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 150ms;
+    -moz-transition-timing-function: cubic-bezier(0, 1, 1, 1);
 }
 
-#urlbar .urlbar-input-layer-children[overlinkstate="showing"]
-{
-	opacity: 0;
+#urlbar .urlbar-input-layer-children[overlinkstate="showing"] {
+    opacity: 0;
 }
 
 /*
  * Location bar status layout
  */
 
-#urlbar[s4esalign="left"] .urlbar-origin-box
-{
-	display: none;
+#urlbar[s4esalign="left"] .urlbar-origin-box {
+    display: none;
 }
 
 #urlbar .urlbar-origin-label,
 #urlbar .urlbar-over-link-host-label,
-#urlbar .urlbar-over-link-path-label
-{
-	padding: 0;
-	margin: 0;
-	border: none;
+#urlbar .urlbar-over-link-path-label {
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
-#urlbar .urlbar-origin-label
-{
-	-moz-padding-start: 6px;
+#urlbar .urlbar-origin-label {
+    -moz-padding-start: 6px;
 }
 
-#urlbar .urlbar-over-link-box:-moz-locale-dir(ltr)
-{
-	-moz-padding-start: 18px;
-	-moz-padding-end: 2px;
+#urlbar .urlbar-over-link-box:-moz-locale-dir(ltr) {
+    -moz-padding-start: 18px;
+    -moz-padding-end: 2px;
 }
 
-#urlbar .urlbar-over-link-box:-moz-locale-dir(rtl)
-{
-	-moz-padding-end: 18px;
-	-moz-padding-start: 2px;
+#urlbar .urlbar-over-link-box:-moz-locale-dir(rtl) {
+    -moz-padding-end: 18px;
+    -moz-padding-start: 2px;
 }
 
-#urlbar[s4esalign="left"] .urlbar-over-link-box:-moz-locale-dir(ltr)
-{
-	-moz-padding-start: 1px;
+#urlbar[s4esalign="left"] .urlbar-over-link-box:-moz-locale-dir(ltr) {
+    -moz-padding-start: 1px;
 }
 
-#urlbar[s4esalign="left"] .urlbar-over-link-box:-moz-locale-dir(rtl)
-{
-	-moz-padding-end: 1px;
+#urlbar[s4esalign="left"] .urlbar-over-link-box:-moz-locale-dir(rtl) {
+    -moz-padding-end: 1px;
 }
 
-#urlbar:not([s4esalign="left"]) .urlbar-over-link-box:-moz-locale-dir(ltr)
-{
-	background: url(chrome://status4evar/skin/urlbar-over-link-arrow.png) no-repeat left center;
+#urlbar:not([s4esalign="left"]) .urlbar-over-link-box:-moz-locale-dir(ltr) {
+    background: url(chrome://status4evar/skin/urlbar-over-link-arrow.png)
+        no-repeat left center;
 }
 
-#urlbar:not([s4esalign="left"]) .urlbar-over-link-box:-moz-locale-dir(rtl)
-{
-	background: url(chrome://status4evar/skin/urlbar-over-link-arrow-rtl.png) no-repeat right center;
+#urlbar:not([s4esalign="left"]) .urlbar-over-link-box:-moz-locale-dir(rtl) {
+    background: url(chrome://status4evar/skin/urlbar-over-link-arrow-rtl.png)
+        no-repeat right center;
 }
 
 /*
  * Throbber
  */
 
-@keyframes status4evar-throbber-widget-loading
-{
-	to
-	{
-		transform: rotate(360deg);
-	}
+@keyframes status4evar-throbber-widget-loading {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-@keyframes status4evar-throbber-widget-connecting
-{
-	from
-	{
-		transform: rotate(360deg);
-	}
+@keyframes status4evar-throbber-widget-connecting {
+    from {
+        transform: rotate(360deg);
+    }
 }
 
-#status4evar-throbber-widget
-{
-	padding: 0 12px;
+#status4evar-throbber-widget {
+    padding: 0 12px;
 }
 
-#status4evar-throbber-widget image
-{
-	list-style-image: url("chrome://status4evar/skin/throbber-idle.png");
-	width: 16px;
-	height: 16px;
+#status4evar-throbber-widget image {
+    list-style-image: url("chrome://status4evar/skin/throbber-idle.png");
+    width: 16px;
+    height: 16px;
 }
 
-#status4evar-throbber-widget[busy] image
-{
-	list-style-image: url("chrome://browser/skin/tabbrowser/connecting.png");
-	animation-duration: 960ms;
-	animation-iteration-count: infinite;
-	animation-name: status4evar-throbber-widget-connecting;
-	animation-timing-function: linear;
+#status4evar-throbber-widget[busy] image {
+    list-style-image: url("chrome://browser/skin/tabbrowser/connecting.png");
+    animation-duration: 960ms;
+    animation-iteration-count: infinite;
+    animation-name: status4evar-throbber-widget-connecting;
+    animation-timing-function: linear;
 }
 
-#status4evar-throbber-widget[progress] image
-{
-	list-style-image: url("chrome://global/skin/icons/loading.png");
-	animation-duration: 800ms;
-	animation-name: status4evar-throbber-widget-loading;
+#status4evar-throbber-widget[progress] image {
+    list-style-image: url("chrome://global/skin/icons/loading.png");
+    animation-duration: 800ms;
+    animation-name: status4evar-throbber-widget-loading;
 }
 
 /*
  * Status bar
  */
 
-#status-bar
-{
-	display: -moz-box;
-	min-width: 0;
-	min-height: 0;
-	-moz-appearance: none;
-	background-color: transparent;
-	border: none;
+#status-bar {
+    display: -moz-box;
+    min-width: 0;
+    min-height: 0;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
 }
 
-#status-bar > statusbarpanel
-{
-	border-width: 0;
-	-moz-appearance: none;
+#status-bar > statusbarpanel {
+    border-width: 0;
+    -moz-appearance: none;
 }
 
-#status-bar > .statusbar-resizerpanel
-{
-	display: none !important;
+#status-bar > .statusbar-resizerpanel {
+    display: none !important;
 }
 
 #status4evar-legacy-widget[cui-areatype="menu-panel"] #status-bar,
-toolbarpaletteitem[place="palette"] > #status4evar-legacy-widget #status-bar
-{
-	min-height: 32px;
+toolbarpaletteitem[place="palette"] > #status4evar-legacy-widget #status-bar {
+    min-height: 32px;
 }
 
-toolbarpaletteitem #status-bar
-{
-	min-width: 32px;
-	background-image: repeating-linear-gradient(135deg,
-	                  rgba(255,255,255,0.1),
-	                  rgba(255,255,255,0.1) 5px,
-	                  rgba(0,0,0,0.1) 5px,
-	                  rgba(0,0,0,0.1) 10px);
+toolbarpaletteitem #status-bar {
+    min-width: 32px;
+    background-image: repeating-linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1) 5px,
+        rgba(0, 0, 0, 0.1) 5px,
+        rgba(0, 0, 0, 0.1) 10px
+    );
 }
-

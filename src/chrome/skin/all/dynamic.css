@@ -1,12 +1,12 @@
 /*
  * ***** BEGIN LICENSE BLOCK *****
- * 
+ *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
- * 
+ *
  * Copyright (C) 2010-2011, 2013 Matthew Turnbull <sparky@bluefang-logic.com>. All Rights Reserved.
- * 
+ *
  * ***** END LICENSE BLOCK *****
 */
 
@@ -14,31 +14,25 @@
 
 /* Progress bar/line styles */
 
-#urlbar[s4estyle="true"] > #urlbar-progress-alt > .progress-bar
-{
-	-moz-appearance: none;
-	background: #33FF33;
+#urlbar[s4estyle="true"] > #urlbar-progress-alt > .progress-bar {
+    -moz-appearance: none;
+    background: #33ff33;
 }
 
-#status4evar-progress-bar[s4estyle="true"] > .progress-bar
-{
-	-moz-appearance: none;
-	background: #33FF33;
-	border-radius: 3px;
+#status4evar-progress-bar[s4estyle="true"] > .progress-bar {
+    -moz-appearance: none;
+    background: #33ff33;
+    border-radius: 3px;
 }
 
-.urlbar-over-link-box
-{
-	color: GrayText;
+.urlbar-over-link-box {
+    color: GrayText;
 }
 
-#status4evar-download-progress-bar[pmType^="active"] > .progress-bar
-{
-	background-color: #33FF33;
+#status4evar-download-progress-bar[pmType^="active"] > .progress-bar {
+    background-color: #33ff33;
 }
 
-#status4evar-download-progress-bar[pmType^="paused"] > .progress-bar
-{
-	background-color: gray;
+#status4evar-download-progress-bar[pmType^="paused"] > .progress-bar {
+    background-color: gray;
 }
-
