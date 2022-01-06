@@ -22,6 +22,7 @@
 		em:creator="hawkeye116477"
 		em:contributor="Matthew Turnbull, Sparky Bluefang, Jonas Jenwald, Snuffleupagus, wolfbeast"
 		em:type="2"
+        em:homepageURL="https://github.com/hawkeye116477/S4E_Revived"
 		em:optionsURL="chrome://status4evar/content/prefs.xul"
 		em:multiprocessCompatible="true">
 
