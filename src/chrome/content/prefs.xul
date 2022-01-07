@@ -8,13 +8,13 @@
 
 <!--
    - ***** BEGIN LICENSE BLOCK *****
-   - 
+   -
    - This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/.
-   - 
+   -
    - Copyright (C) 2010-2016 Matthew Turnbull <sparky@bluefang-logic.com>. All Rights Reserved.
-   - 
+   -
    - ***** END LICENSE BLOCK *****
 -->
 
@@ -34,11 +34,11 @@
             xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
             onload="status4evarPrefs.onPrefWindowLoad();" onunload="status4evarPrefs.onPrefWindowUnLoad();">
 
-	<stringbundleset id="stringbundleset">  
-		<stringbundle id="bundle_status4evar" src="chrome://status4evar/locale/prefs.properties" />   
+	<stringbundleset id="stringbundleset">
+		<stringbundle id="bundle_status4evar" src="chrome://status4evar/locale/prefs.properties" />
 	</stringbundleset>
 	<script type="application/javascript" src="chrome://status4evar/content/prefs.js" />
- 
+
 	<prefpane id="status4evar-pane-status" label="&status4evar.pane.status;">
 		<preferences>
 			<preference id="status4evar-pref-status"                     name="extensions.hawkeye116477.s4e.status"                     type="int" />
@@ -97,7 +97,7 @@
 						<hbox align="center">
 							<checkbox id="status4evar-status-timeout-check" label="&status4evar.status.timeout.label;"
 							          command="status4evar-command-status-timeout" />
-							<textbox id="status4evar-status-timeout-value" preference="status4evar-pref-status-timeout" type="number" size="4" 
+							<textbox id="status4evar-status-timeout-value" preference="status4evar-pref-status-timeout" type="number" size="4"
 							         onsyncfrompreference="return status4evarPrefs.statusTimeoutSync();" />
 							<label id="status4evar-status-timeout-unit">&status4evar.unit.seconds;</label>
 						</hbox>
@@ -421,7 +421,7 @@
 						<label id="warningText">&status4evar.advanced.warning;</label>
 						<checkbox id="showWarningNextTime" label="&aboutWarningCheckbox.label;" checked="true" />
 						<hbox pack="center">
-							<button id="warningButton" command="status4evar-command-advanced-continue" />
+							<button id="warningButton" command="status4evar-command-advanced-continue" label="&aboutWarningButton2.label;" />
 						</hbox>
 					</vbox>
 				</hbox>
