@@ -17,7 +17,7 @@
 }
 
 radio[pane="status4evar-pane-status"] {
-    list-style-image: url("chrome://global/skin/icons/information-32.png");
+    list-style-image: url("chrome://status4evar/skin/info.svg");
 }
 
 radio[pane="status4evar-pane-progress"] {
@@ -29,7 +29,7 @@ radio[pane="status4evar-pane-download"] {
 }
 
 radio[pane="status4evar-pane-addonbar"] {
-    list-style-image: url("chrome://mozapps/skin/extensions/extensionGeneric.png");
+    list-style-image: url("chrome://mozapps/skin/extensions/extensionGeneric.svg");
 }
 
 radio[pane="status4evar-pane-advanced"] {
