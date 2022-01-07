@@ -354,6 +354,7 @@ var status4evarPrefs =
     },
 
     advancedShowPrefs: function () {
+        this.advancedShowWarningPref.value = this.advancedShowWarningCheck.checked;
         this.advancedDeck.selectedIndex = 1;
     },
 
@@ -391,11 +392,7 @@ var status4evarPrefs =
         }
     },
 
-    onPrefWindowUnLoad: function () {
-        if (this.advancedDeck.selectedIndex == 1 && this.advancedShowWarningPref.value) {
-            this.advancedShowWarningPref.value = this.advancedShowWarningCheck.checked;
-        }
-    }
+    onPrefWindowUnLoad: function () { }
 }
 
 var XULBrowserWindow = {
