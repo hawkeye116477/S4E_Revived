@@ -24,7 +24,11 @@ const CURRENT_MIGRATION = 7;
 
 const EXPORTED_SYMBOLS = ["s4e_service"];
 
-var s4e_service = {
+function Status_4_Evar() {
+    this.startup();
+}
+
+Status_4_Evar.prototype = {
     QueryInterface: XPCOMUtils.generateQI([
         CI.nsISupportsWeakReference,
         CI.nsIObserver,
@@ -736,3 +740,5 @@ var s4e_service = {
         }, this);
     }
 };
+
+const s4e_service = new Status_4_Evar();

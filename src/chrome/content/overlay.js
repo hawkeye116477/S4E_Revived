@@ -25,9 +25,6 @@ window.addEventListener("load", function buildS4E() {
 
     Components.utils.import("resource://status4evar/Status4Evar.jsm");
 
-    Components.utils.import("resource://status4evar/s4e_service.jsm");
-    s4e_service.startup();
-
     hawkeye116477.status4evar = new Status4Evar(window, gBrowser, gNavToolbox, PanelUI);
     hawkeye116477.status4evar.setup();
 }, false);
