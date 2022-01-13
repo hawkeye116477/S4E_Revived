@@ -18,6 +18,8 @@
         em:description="Status widgets and progress indicators for Waterfox Classic and Basilisk"
         em:id="status4evar-revived@hawkeye116477"
         em:version="2019.10.11.3"
+        em:iconURL="chrome://status4evar/skin/extIcon48.png"
+        em:icon64URL="chrome://status4evar/skin/extIcon64.png"
         em:creator="hawkeye116477"
         em:contributor="Matthew Turnbull, Sparky Bluefang, Jonas Jenwald, Snuffleupagus, wolfbeast"
         em:type="2"

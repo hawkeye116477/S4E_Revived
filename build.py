@@ -68,6 +68,11 @@ with open(install_file, 'r', encoding='utf-8') as install_f:
 with open(install_file, 'w', encoding='utf-8') as install_f:
     install_f.write(data)
 
+# Remove xcf icon
+xcfIcon = pn(".chrome/skin/all/extIcon.xcf")
+if os.path.exists(xcfIcon):
+    os.remove(xcfIcon)
+
 # Create xpi
 artifacts_path = pj(main_path, "artifacts")
 f_name = "S4E_Revived-"+extVersion

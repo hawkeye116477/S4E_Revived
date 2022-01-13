@@ -65,11 +65,11 @@
  */
 
 #status4evar-options-button {
-    list-style-image: url("chrome://status4evar/skin/s4e32.png");
+    list-style-image: url("chrome://status4evar/skin/extIcon32.png");
 }
 
 #status4evar-options-button[cui-areatype="toolbar"] {
-    list-style-image: url("chrome://status4evar/skin/s4e16.png");
+    list-style-image: url("chrome://status4evar/skin/extIcon16.png");
 }
 
 /*
