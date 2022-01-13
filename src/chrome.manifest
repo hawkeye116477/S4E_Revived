@@ -17,9 +17,9 @@ manifest locales.manifest
 
 # Skin
 skin status4evar    classic/1.0 chrome/skin/all/
-skin status4evar-os classic/1.0 chrome/skin/gnomestripe/
-skin status4evar-os classic/1.0 chrome/skin/winstripe/   os=WINNT
-skin status4evar-os classic/1.0 chrome/skin/pinstripe/   os=Darwin
+skin status4evar-os classic/1.0 chrome/skin/linux/
+skin status4evar-os classic/1.0 chrome/skin/windows/   os=WINNT
+skin status4evar-os classic/1.0 chrome/skin/osx/   os=Darwin
 override chrome://mozapps/skin/extensions/extensionGeneric.svg chrome://mozapps/skin/extensions/extensionGeneric.png appversion<53.0
 
 # Overlays
